@@ -67,7 +67,7 @@ module "ec2_instance" {
 
   name = "Jenkins-Server"
 
-  key_name                    = "jenkins-server-key"
+  key_name                    = "Jenkins-server-key"
   instance_type               = var.instance_type
   monitoring                  = true
   vpc_security_group_ids      = [module.sg.security_group_id]
